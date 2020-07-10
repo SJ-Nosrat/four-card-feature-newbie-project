@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+/***MAIN STYLES*****************/
+.content-wrapper {
+    padding: 5rem 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+h1 span {
+    display: block;
+    font-weight: 600;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+.description {
+    margin: 1rem 0 3.5rem;
+    width: 311px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    box-shadow: 1px 1px 5px 3px rgba(163, 165, 174, 0.301);
+    margin-bottom: 1.2rem;
+    padding: 1.5rem 1rem;
+    border-radius: 7px;
+    max-width: 330px;
+    height: 222px;
+}
+
+.column-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.supervisor-card {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team-builder-card {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma-card {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator-card {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.flex-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 60%;
+}
+
+/***FOOTER STYLES***************/
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+.attribution { 
+    font-size: 11px; 
+    margin-bottom: 1rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/***MEDIA QUERIES***************/
+@media (min-width: 724px) and (max-width: 1069px) {
+    .description {
+        width: 500px;
+    }
+    .team-builder-card {
+        margin-right: .5rem;
+    }
+    .karma-card {
+        margin-left: .5rem;
+    }
+}
+
+@media (min-width: 1070px) and (max-width: 1280px) {
+    .description {
+        width: 500px;
+    }
+    .team-builder-card {
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 1281px) {
+    h1{
+        font-size: 2.3rem;
+        font-weight: 200;
+    }
+    .description {
+        width: 500px;
+    }
+    .column-wrapper {
+        flex-direction: column;
+    }
+    .supervisor-card {
+        margin-right: 1.75rem;
+    }
+    .calculator-card {
+        margin-left: 1.75rem;
+    }
+}
